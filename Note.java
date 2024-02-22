@@ -1,7 +1,4 @@
 import java.util.List;
-
-import javax.naming.LimitExceededException;
-
 import java.util.ArrayList;
 
 public class Note {
