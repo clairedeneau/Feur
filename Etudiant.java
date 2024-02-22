@@ -1,9 +1,18 @@
-import java.util.List;
+public class Etudiant{
+    private String nom;
+    private String prenom;
 
-public class Etudiant {
-    private String firstName;
-    private String lastName;
-    private List<Note> liNote;
-    private List<Groupe> liGroupe;
-    
+    public Etudiant(String nom, String prenom){
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
+    public String getNom(){
+        return this.nom;
+    }
+
+    public String getPrenom(){
+        return this.prenom;
+    }
+
 }
