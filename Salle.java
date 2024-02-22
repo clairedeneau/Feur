@@ -15,5 +15,13 @@ public class Salle{
         return this.horaire;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHoraire(Horaire horaire) {
+        this.horaire = horaire;
+    }
+
     
 }
