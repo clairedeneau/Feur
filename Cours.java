@@ -37,7 +37,7 @@ public class Cours{
 
     public Groupe getGroupe(String nom) {
         for (Groupe groupe : this.liGroupe){
-            if (nom = groupe.getNom()){
+            if (nom == groupe.getNomGroupe()){
                 return groupe;
             }
         }
