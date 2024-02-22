@@ -25,8 +25,8 @@ public class Etudiant{
         return this.lesNotes;
     }
 
-    // public void ajouteNote(){ je ferai quand note sera fait
-    //     this.lesNotes.add();
-    // }
+    public void ajouteNote(String nomControle, Etudiant etudiant){ 
+        this.lesNotes.add(new Note(nomControle,etudiant));
+    }
 
 }
