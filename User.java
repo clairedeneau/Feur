@@ -11,7 +11,7 @@ public class User {
         return this.cours;
     }
 
-    public String getnName(){
+    public String getName(){
         return this.name;
     }
 
