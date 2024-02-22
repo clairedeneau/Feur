@@ -23,24 +23,29 @@ public class Cours{
         return null;
     }
 
-    public void setLiUser(List<User> liUser) {
-        this.liUser = liUser;
+    public void ajouteUser(User user) {
+        this.liUser.add(user);
     }
 
     public Matiere getMatiere() {
-        return matiere;
+        return this.matiere;
     }
 
     public void setMatiere(Matiere matiere) {
         this.matiere = matiere;
     }
 
-    public List<Groupe> getLiGroupe() {
-        return liGroupe;
+    public Groupe getGroupe(String nom) {
+        for (Groupe groupe : this.liGroupe){
+            if (nom = groupe.getNom()){
+                return groupe;
+            }
+        }
+        return null;
     }
 
-    public void setLiGroupe(List<Groupe> liGroupe) {
-        this.liGroupe = liGroupe;
+    public void ajouteGroupe(Groupe groupe) {
+        this.liGroupe.add(groupe);
     }
 
     public Horaire getHoraire() {
