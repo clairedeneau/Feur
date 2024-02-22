@@ -7,11 +7,11 @@ public class Salle{
         this.horaire = horaire;
     }
 
-    public getName(){
+    public String getName(){
         return this.name;
     }
 
-    public getHoraire(){
+    public Horaire getHoraire(){
         return this.horaire;
     }
 
