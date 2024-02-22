@@ -15,5 +15,9 @@ public class User {
         return this.name;
     }
 
+    public void setName(String nom){
+        this.name = nom;
+    }
+
     
 }
