@@ -16,7 +16,7 @@ public class Cours{
 
     public User getUser(String nom) {
         for (User user : this.liUser){
-            if (nom = user.getName()){
+            if (nom == user.getName()){
                 return user;
             }
         }
