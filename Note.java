@@ -1,4 +1,7 @@
 import java.util.List;
+
+import javax.naming.LimitExceededException;
+
 import java.util.ArrayList;
 
 public class Note {
@@ -38,7 +41,7 @@ public class Note {
 
     public void AjouteLiMatiere(Matiere newMatiere){
         if(liMatiere.contains(newMatiere)){
-            
+            liMatiere.add(newMatiere);
         }
     }
 
