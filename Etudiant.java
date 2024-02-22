@@ -5,6 +5,7 @@ import java.util.List;
 public class Etudiant{
     private String nom;
     private String prenom;
+    private List<Note> lesNotes;
 
     public Etudiant(String nom, String prenom){
         this.nom = nom;
