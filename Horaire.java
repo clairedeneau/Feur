@@ -31,6 +31,16 @@ public class Horaire {
         this.liSalle.add(salle);
     }
 
-    
-    
+    public List<Salle> getListeSalles(){
+        return this.liSalle;
+    }
+
+    public Salle getSalleByName(String nom){
+        for(Salle piece : this.liSalle){
+            if(piece.getName().equals(nom)){
+                return piece;
+            }
+        }
+        return null;
+    }
 }
