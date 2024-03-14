@@ -17,7 +17,7 @@ public class Etudiant{
         return this.prenom;
     }
 
-    public List<Note> getNotes(){
+    public Note getNotes(){
         return this.lesNotes;
     }
 
