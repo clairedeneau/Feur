@@ -1,16 +1,12 @@
-import java.util.ArrayList;
-import java.util.List;
-
-
 public class Etudiant{
     private String nom;
     private String prenom;
-    private List<Note> lesNotes;
+    private Note lesNotes;
 
-    public Etudiant(String nom, String prenom){
+    public Etudiant(String nom, String prenom, Note bulletin){
         this.nom = nom;
         this.prenom = prenom;
-        this.lesNotes = new ArrayList<>();
+        this.lesNotes = bulletin;
     }
 
     public String getNom(){
@@ -23,10 +19,6 @@ public class Etudiant{
 
     public List<Note> getNotes(){
         return this.lesNotes;
-    }
-
-    public void ajouteNote(String nomControle, Etudiant etudiant){ 
-        this.lesNotes.add(new Note(nomControle,etudiant));
     }
 
 }
