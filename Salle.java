@@ -1,6 +1,8 @@
+
 public class Salle{
     private String name;
     private Horaire horaire;
+    private int capacite;
 
     public Salle(String name, Horaire horaire){
         this.name = name;
@@ -23,5 +25,12 @@ public class Salle{
         this.horaire = horaire;
     }
 
-    
+    public int getCapacite() {
+        return this.capacite;
+    }
+
+    public void setCapacite(int capacite) {
+        this.capacite = capacite;
+    }
+
 }
