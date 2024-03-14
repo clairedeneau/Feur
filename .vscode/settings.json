@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/iut45/Etudiants/o22300816/Qualité_De_Developpement/junit-4.13.2.jar",
+        "/home/iut45/Etudiants/o22300816/Qualité_De_Developpement/hamcrest-2.2.jar"
+    ]
+}
