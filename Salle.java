@@ -1,5 +1,5 @@
 public class Salle{
-        private String name;
+    private String name;
     private Horaire horaire;
 
     public Salle(String name, Horaire horaire){
