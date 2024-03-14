@@ -1,30 +1,22 @@
-import java.util.List;
-import java.util.ArrayList;
-
 public class Cours{
-    private List<User> liUser;
+    private User user;
     private Matiere matiere;
-    private List<Groupe> liGroupe;
+    private Groupe groupe;
     private Horaire horaire;
     
-    public Cours(Matiere matiere, Horaire horaire) {
+    public Cours(User user, Matiere matiere, Horaire horaire, Groupe groupe) {
         this.matiere = matiere;
         this.horaire = horaire;
-        this.liUser = new ArrayList<>();
-        this.liGroupe = new ArrayList<>();
+        this.user = user;
+        this.groupe = groupe;
     }
 
-    public User getUser(String nom) {
-        for (User user : this.liUser){
-            if (nom = user.getName()){
-                return user;
-            }
-        }
-        return null;
+    public User getUser() {
+        return this.user;
     }
 
-    public void ajouteUser(User user) {
-        this.liUser.add(user);
+    public void setUser(User newUser) {
+        this.user = newUser;
     }
 
     public Matiere getMatiere() {
@@ -36,16 +28,11 @@ public class Cours{
     }
 
     public Groupe getGroupe(String nom) {
-        for (Groupe groupe : this.liGroupe){
-            if (nom = groupe.getNom()){
-                return groupe;
-            }
-        }
-        return null;
+        return this.groupe;
     }
 
-    public void ajouteGroupe(Groupe groupe) {
-        this.liGroupe.add(groupe);
+    public void setGroupe(Groupe groupe) {
+        this.groupe = groupe;
     }
 
     public Horaire getHoraire() {
