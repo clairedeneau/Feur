@@ -1,28 +1,30 @@
+import java.util.List;
+import java.util.ArrayList;
 
 public class Salle{
     private String name;
-    private Horaire horaire;
+    private List<Cours> cours;
     private int capacite;
 
-    public Salle(String name, Horaire horaire){
+    public Salle(String name){
         this.name = name;
-        this.horaire = horaire;
+        this.cours = new ArrayList<>();
     }
 
     public String getName(){
         return this.name;
     }
 
-    public Horaire getHoraire(){
-        return this.horaire;
-    }
+    /*public Cours getCours(){
+        return this.cours;
+    }**/
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setHoraire(Horaire horaire) {
-        this.horaire = horaire;
+    public void ajoutCours(Cours cours) {
+        this.cours.add(cours);
     }
 
     public int getCapacite() {
