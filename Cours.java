@@ -3,12 +3,14 @@ public class Cours{
     private Matiere matiere;
     private Groupe groupe;
     private Horaire horaire;
+    private Salle salle;
     
-    public Cours(User user, Matiere matiere, Horaire horaire, Groupe groupe) {
+    public Cours(User user, Matiere matiere, Horaire horaire, Groupe groupe, Salle salle) {
         this.matiere = matiere;
         this.horaire = horaire;
         this.user = user;
         this.groupe = groupe;
+        this.salle = salle;
     }
 
     public User getUser() {
@@ -41,5 +43,13 @@ public class Cours{
 
     public void setHoraire(Horaire horaire) {
         this.horaire = horaire;
+    }
+
+    public void setSalle(Salle salle) {
+        this.salle = salle;
+    }
+
+    public Salle getSalle(){
+        return this.salle;
     }
 }
