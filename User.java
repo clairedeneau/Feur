@@ -19,5 +19,11 @@ public class User {
         this.name = nom;
     }
 
+     @Override
+
+    public String toString(){
+        return "Nom utilisateur: " + this.name + ", cours utilisateur: " + this.cours;
+    }
+
     
 }
